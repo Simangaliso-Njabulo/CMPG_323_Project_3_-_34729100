@@ -3,6 +3,7 @@ using System.Linq.Expressions;
 using System;
 using DeviceManagement_WebApp.Data;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace DeviceManagement_WebApp.Repositories
 {
@@ -16,6 +17,7 @@ namespace DeviceManagement_WebApp.Repositories
         public void Add(T entity)
         {
             _context.Set<T>().Add(entity);
+            _context.SaveChangesAsync();
         }
         public void AddRange(IEnumerable<T> entities)
         {
