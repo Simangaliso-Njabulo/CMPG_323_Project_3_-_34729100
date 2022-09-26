@@ -36,7 +36,6 @@ namespace DeviceManagement_WebApp.Controllers
                 return NotFound();
             }
 
-        //  var category = await _context.Category.FirstOrDefaultAsync(m => m.CategoryId == id);
             var category = _categoryRepository.GetById(id);
 
             if (category == null)
