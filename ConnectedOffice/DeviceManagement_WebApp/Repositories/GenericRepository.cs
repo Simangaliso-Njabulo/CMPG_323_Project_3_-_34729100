@@ -43,5 +43,11 @@ namespace DeviceManagement_WebApp.Repositories
         {
             _context.Set<T>().RemoveRange(entities);
         }
+
+        public void Update(T entity)
+        {
+            _context.Update(entity);
+            _context.SaveChangesAsync();
+        }
     }
 }
