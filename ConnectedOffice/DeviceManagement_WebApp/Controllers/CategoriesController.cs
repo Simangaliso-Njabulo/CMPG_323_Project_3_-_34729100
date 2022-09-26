@@ -8,9 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using DeviceManagement_WebApp.Data;
 using DeviceManagement_WebApp.Models;
 using DeviceManagement_WebApp.Repositories;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DeviceManagement_WebApp.Controllers
-{
+{ 
+    [Authorize]
     public class CategoriesController : Controller
     {
         private readonly ConnectedOfficeContext _context;
@@ -36,7 +38,6 @@ namespace DeviceManagement_WebApp.Controllers
                 return NotFound();
             }
 
-        //  var category = await _context.Category.FirstOrDefaultAsync(m => m.CategoryId == id);
             var category = _categoryRepository.GetById(id);
 
             if (category == null)
@@ -73,7 +74,8 @@ namespace DeviceManagement_WebApp.Controllers
                 return NotFound();
             }
 
-            var category = await _context.Category.FindAsync(id);
+            var category = _categoryRepository.GetById(id);
+
             if (category == null)
             {
                 return NotFound();
@@ -94,8 +96,7 @@ namespace DeviceManagement_WebApp.Controllers
             }
             try
             {
-                _context.Update(category);
-                await _context.SaveChangesAsync();
+                _categoryRepository.Update(category);
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -119,8 +120,8 @@ namespace DeviceManagement_WebApp.Controllers
                 return NotFound();
             }
 
-            var category = await _context.Category
-                .FirstOrDefaultAsync(m => m.CategoryId == id);
+            var category = _categoryRepository.GetById(id);
+
             if (category == null)
             {
                 return NotFound();
@@ -134,15 +135,14 @@ namespace DeviceManagement_WebApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
-            var category = await _context.Category.FindAsync(id);
-            _context.Category.Remove(category);
-            await _context.SaveChangesAsync();
+            var category = _categoryRepository.GetById(id);
+            _categoryRepository.Remove(category);
             return RedirectToAction(nameof(Index));
         }
 
         private bool CategoryExists(Guid id)
         {
-            return _context.Category.Any(e => e.CategoryId == id);
+            return _categoryRepository.Exists(id);
         }
     }
 }

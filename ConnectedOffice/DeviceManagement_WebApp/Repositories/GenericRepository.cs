@@ -38,10 +38,21 @@ namespace DeviceManagement_WebApp.Repositories
         public void Remove(T entity)
         {
             _context.Set<T>().Remove(entity);
+            _context.SaveChangesAsync();
         }
         public void RemoveRange(IEnumerable<T> entities)
         {
             _context.Set<T>().RemoveRange(entities);
+        }
+
+        public void Update(T entity)
+        {
+            _context.Update(entity);
+            _context.SaveChangesAsync();
+        }
+        public bool Exists(Guid? id)
+        {
+            return _context.Set<T>().Find(id) != null;
         }
     }
 }
