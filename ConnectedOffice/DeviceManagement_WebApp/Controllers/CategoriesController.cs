@@ -15,13 +15,11 @@ namespace DeviceManagement_WebApp.Controllers
     [Authorize]
     public class CategoriesController : Controller
     {
-        private readonly ConnectedOfficeContext _context;
         private readonly ICategoryRepository _categoryRepository;
 
-        public CategoriesController(ConnectedOfficeContext context, ICategoryRepository categoryRepository)
+        public CategoriesController(ICategoryRepository categoryRepository)
         {
             _categoryRepository = categoryRepository;
-            _context = context;
         }
 
         // GET: Categories
@@ -63,7 +61,7 @@ namespace DeviceManagement_WebApp.Controllers
         {
             category.CategoryId = Guid.NewGuid();
             _categoryRepository.Add(category);
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Index),true);
         }
 
         // GET: Categories/Edit/5

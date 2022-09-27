@@ -8,5 +8,4 @@ namespace DeviceManagement_WebApp.Repositories
     {
         Category GetMostRecentCategory();
     }
-
 }

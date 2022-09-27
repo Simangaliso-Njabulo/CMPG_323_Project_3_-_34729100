@@ -13,7 +13,7 @@ namespace DeviceManagement_WebApp.Repositories
 
         public Category GetMostRecentCategory()
         {
-            return _context.Category.OrderByDescending(service => service.DateCreated).FirstOrDefault();
+            return _context.Category.OrderByDescending(category => category.DateCreated).FirstOrDefault();
         }
     }
 }
