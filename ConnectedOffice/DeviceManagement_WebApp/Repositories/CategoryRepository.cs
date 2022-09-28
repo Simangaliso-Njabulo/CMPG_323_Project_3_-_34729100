@@ -1,5 +1,4 @@
 ﻿using DeviceManagement_WebApp.Data;
-using DeviceManagement_WebApp.Repositories;
 using DeviceManagement_WebApp.Models;
 using System.Linq;
 
@@ -13,7 +12,7 @@ namespace DeviceManagement_WebApp.Repositories
 
         public Category GetMostRecentCategory()
         {
-            return _context.Category.OrderByDescending(service => service.DateCreated).FirstOrDefault();
+            return _context.Category.OrderByDescending(category => category.DateCreated).FirstOrDefault();
         }
     }
 }

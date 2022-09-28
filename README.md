@@ -11,4 +11,13 @@
  <li><p><a href="https://programmingwithmosh.com/net/should-you-split-your-asp-net-mvc-project-into-multiple-projects/">Should you split your ASP.NET MVC project into multiple projects?</a></p></li>
  <li><p><a href="https://procodeguide.com/design/solid-principles-with-csharp-net-core/">Solid Principles with C# .NET Core with Practical Examples & Interview Questions</a></p></li>
  <li><p><a href="https://www.c-sharpcorner.com/article/solid-with-net-core/">SOLID With .Net Core</a></p></li>
+ <li><p><a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design">Design the infrastructure persistence layer</a></p></li>
+ <li><p><a href="https://medium.com/@pererikbergman/repository-design-pattern-e28c0f3e4a30">Repository Design Pattern</a></p></li>
+  <li><p><a href="https://www.pragimtech.com/blog/blazor/rest-api-repository-pattern/">Repository Pattern in ASP.NET Core REST API</a></p></li>
+<li><p><a href="https://youtu.be/qJmEI2LtXIY">Repository pattern in asp net core</a></p></li>
+<li><p><a href="https://youtu.be/BcQzZ97-mWU">Understanding the Repository Pattern in C#</a></p></li>
+<li><p><a href="https://learn.microsoft.com/en-us/shows/asp-net-site-videos/aspnet-mvc-storefront-part-2-repository-pattern">ASP.NET MVC Storefront Part 2: The Repository Pattern</a></p></li>
+<li><p><a href="https://youtu.be/ilZV1mNn_e8">Using Repository Pattern
+</a></p></li>
+
 </ul>
