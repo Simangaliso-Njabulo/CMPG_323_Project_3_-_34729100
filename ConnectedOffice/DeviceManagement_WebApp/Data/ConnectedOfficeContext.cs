@@ -5,11 +5,6 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.Extensions.Configuration;
 using System.IO;
 
-
-// Code scaffolded by EF Core assumes nullable reference types (NRTs) are not used or disabled.
-// If you have enabled NRTs for your project, then un-comment the following line:
-// #nullable disable
-
 namespace DeviceManagement_WebApp.Data
 {
     public partial class ConnectedOfficeContext : DbContext

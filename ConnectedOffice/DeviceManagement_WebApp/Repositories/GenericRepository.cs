@@ -3,7 +3,6 @@ using System.Linq.Expressions;
 using System;
 using DeviceManagement_WebApp.Data;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace DeviceManagement_WebApp.Repositories
 {
