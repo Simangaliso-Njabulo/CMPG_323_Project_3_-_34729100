@@ -18,7 +18,7 @@ Step 7: To delete a zone click on the bin icon next to the zone you want to dele
 
 > Note After peforming any the above metion actions you may want to refresh the page to see the changes.
 
-Step 8: Categories and Devices can be tested in a similar manner.
+#### Categories and Devices can be tested in a similar manner.
 
 
 ## References
