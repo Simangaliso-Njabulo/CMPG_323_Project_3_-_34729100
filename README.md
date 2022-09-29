@@ -20,6 +20,9 @@ Step 7: To delete a zone click on the bin icon next to the zone you want to dele
 
 #### Categories and Devices can be tested in a similar manner.
 
+## Kanban
+
+<p><a href="https://github.com/users/Simangaliso-Njabulo/projects/1">Project plan</a></p>
 
 ## References
 <ul>
