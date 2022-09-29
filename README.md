@@ -1,5 +1,26 @@
 # CMPG_323_Project_3_-_34729100
 
+How to test the API
+Step 1: Go to this url - https://cmpg323-pro3-34729100-ase.azurewebsites.net/<br/>
+
+Step 2: Click "Login". And Login with the following credetials - Email: dave@example.com | Password: Abc123!@<br/>
+> Note!!! You can also click register and create your own account. 
+
+Step 3: You will then see the home page and the "Home"," Zones", "Categories", "Devices", and "Logout" tabs on the left hand side of you page. Click "Zones".<br/>
+
+Step 4: All availible zones will appear in the center of your page. You can Add, Edit, Veiw, or delete zones. To Add a zone click on the plus button next to the "zones" heading. Fill in the name and decripction, then click the blue create button.  <br/>
+
+Step 5: To edit a zone you can the pencil icon next to the zone you want to edit, fill in the name and description, then click save.<br/>
+
+Step 6: To view a zone click on the eye icon the to the zone you want to view. The details of that zone will appear. Once your done you can click "Back to List" to go back or "Edit" to edit that zone.<br/>
+
+Step 7: To delete a zone click on the bin icon next to the zone you want to delete the click on the red "Delete" or "Back to list" if you changed your mind about the deletion of that zone.<br/>
+
+> Note After peforming any the above metion actions you may want to refresh the page to see the changes.
+
+Step 8: Categories and Devices can be tested in a similar manner.
+
+
 ## References
 <ul>
  <li><p><a href="https://thejpanda.com/2020/08/10/python-automating-asp-net-core-web-api-creation-that-communicates-with-your-database-in-60-seconds-or-less/">Automating ASP.NET Core Web API Creation That Communicates With Your Database in 60 Seconds or Less</a></p></li>
